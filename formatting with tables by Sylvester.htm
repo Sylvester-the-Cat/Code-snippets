@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>formatting positions and alignments using tables By Sylvester J Pussycat</title>
+</head>
+<body>
+<table width="100%" name="TableToCreateTheMargins"><!--This first table is merely creating the two side margins. This is optional, however I recommend doing
+it, as it improves readability, layout and compatibility between both 4:3 (letterbox (i think)) and 16:9 (wide) monitors-->
+
+<tr >
+
+
+	<td width="15%"></td><!--this is the left-most border-->
+		<td width="85%"><!--This is the middle, where all your content will go-->
+		<!--you now have a blank section in the middle of the web page. now to create another table, which will be used to create the
+		layout of your content-->
+
+
+			<table width="85%" name="theContentOfYourPage" border="1"><!--TODO: check if 100% or 70% should be used-->
+				<tr><!--This row will be your "header"-->
+
+				<!--IN THE TD BELOW, ADD YOUR LOGO-->
+				<td width="100"><!--your logo here....-->logo</td>
+
+
+				<td><!--in here, we'll place a table 1 column by two rows (the first row will be the company name, the second the tagline)-->
+				
+
+
+				<!--THIS IS THE COMPANY NAME AND TAGLINE.......-->
+				<table width="100%" border="1"><tr><td><h1>Formatting with tables</h1></td></tr><!--Company name goes here<<<<<<<<<-->
+						<tr><td><h2>By: Sylvester J Pussycat</h2></td></tr>					<!--company tagline	-->
+					</table>
+				</td></tr>
+
+				<tr><td><!--this cell is under the logo, and is only 30px wide; also HTML glitches out with cell merging and splitting it,
+				which is why I'm not going to merge this cell to use full page width, so leave this cell alone-->
+				</td>
+
+
+				<!--THE NAVBAR-->
+				<td><!--This is where you can place a navigation bar--><h3>navbar goes here....</h3></td></tr> <!--This is the end of the header-->
+				
+				<tr><td valign="top">let's<br />add<br />a<br />vertical<br />navbar<br />here<br />....</td><td><!--This is where the content goes-->
+				
+
+
+
+				<!--CONTENT BEGINS HERE......-->
+
+				<!--YOU CAN HAVE CONTENT HERE THAT USES UP THE WHOLE PAGE WIDTH (I.E. NO COLUMNS)-->
+
+				this is not formatted in columns
+
+
+
+				<!--HERE ARE TWO COLUMNS-->
+				<table width="100%" name="divideTheContentIntoTwoColumns" border="1">
+						<tr><td>
+						
+						Column 1
+						<br /><br /><br /><br /><br /><br /><br />bottom of column1
+						<!--left hand column-->
+
+						</td><td>
+						
+						Column 2
+						<br /><br /><br /><br /><br /><br /><br />bottom of column2
+						<!--right hand column-->
+						
+						</td></tr>
+				</table>
+
+				
+				<!--HERE YOU CAN HAVE MORE CONTENT THAT USES THE WHOLE PAGE WIDTH (NO COLUMNS)-->
+
+				this is not formatted to use columns
+
+				</td>
+				</tr>
+			</table>
+			</td><!--end of the middle section of web page-->
+			<td width="15%"></td><!--this is the right-most border-->
+			</tr>
+</table>
+
+NOTE: that I have added a border so you can see the actual tables
+</body>
+</html>
